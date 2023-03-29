@@ -1,0 +1,162 @@
+/* Home section design properties */
+div#home{
+    background:rgba(0, 0, 0, 0.802);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: 50% 50%;
+    backdrop-filter: brightness(0%);
+}
+
+div#home button.home_nav {
+    border:2px solid rgba(255, 255, 255, 0);
+    border-radius: 0.4em;
+    color:white;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+div#home a {
+    color:white;
+}
+
+div#home h1{
+    color:white;
+    font-size: 5em;
+    font-weight: bold;
+}
+div#home h2{
+    color:white;
+    font-size: 2em;
+}
+div#home p{
+    color:white;
+    font-size: 1.5em;
+}
+
+div#home img#logo {
+    filter:drop-shadow(0px 0px 10px rgba(0, 0, 0, 0)) invert(100%) brightness(1);
+}
+div#home button.home_main {
+    border-radius: 0.4em;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.4em;
+    background-color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1000px) {
+    div#home button.home_nav {
+        border:2px solid rgb(255, 255, 255);
+        font-size: 1em;
+    }
+    div#home button.home_main {
+        font-size: 1em;
+    }
+    div#home h1{
+        color:white;
+        font-size: 4em;
+        font-weight: bold;
+    }
+    div#home h2{
+        color:white;
+        font-size: 1.5em;
+    }
+    div#home p{
+        color:white;
+        font-size: 1em;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    div#home button.home_nav {
+        border:2px solid rgb(255, 255, 255);
+        font-size: 0.8em;
+    }
+    div#home button.home_main {
+        font-size: 1em;
+    }
+    div#home h1{
+        color:white;
+        font-size: 3em;
+        font-weight: bold;
+    }
+    div#home h2{
+        color:white;
+        font-size: 1em;
+    }
+    div#home p{
+        color:white;
+        font-size: 0.5em;
+    }
+  }
+/* Home section layout properties */
+
+div#home img#logo {
+    width:12em;
+    height:auto;
+}
+div#home {
+    height:100vh;
+}
+div#home div.navigation{
+    height:30vh;
+}
+div#home div.main{
+    height:40vh;
+}
+div#home button.home_nav {
+    padding-inline: 0.3em;
+}
+div#home button.home_main {
+    padding-block:0.5em;
+    padding-inline: 1em;
+}
+/* Home section after properties */
+div#home button.home_nav:hover {
+    background-color: white;
+    color:black;
+    border-color: white;
+}
+div#home img#logo:hover {
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0)) invert(100%) brightness(1);
+}
+
+div#home button.home_main:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border:1px solid white;
+    color:white;
+}
+
+@media only screen and (max-width: 1000px) {
+    div#home div.navigation{
+        height:40vh;
+    }
+    div#home div.main{
+        height:50vh;
+    }
+    div#home img#logo {
+        width:10em;
+        height:auto;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    div#home div.navigation{
+        height:50vh;
+    }
+    div#home div.main{
+        height:30vh;
+    }
+    div#home img#logo {
+        width:8em;
+        height:auto;
+    }
+  }
+/* Home section transition properties */
+div#home button.home_nav {
+    transition:border 0.2s, background 0.4s ease-in 0.3s, color 0.4s ease-in 0.3s;
+}
+div#home button.home_main, div#home img#logo {
+    transition: all 0.2s ease-in;
+}

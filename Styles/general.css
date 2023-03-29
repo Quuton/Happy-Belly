@@ -1,0 +1,258 @@
+/* Textbox module */
+/* Textbox design properties */
+div.textbox hr {
+    height: 0.3em;
+}
+
+div.textbox h1 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+div.textbox p {
+    font-size: 20px;
+    border-radius: 5px;
+}
+div.textbox button.general_button {
+    border-radius:0.4em;
+    border:none;
+    background-color: black;
+    color:white;
+}
+
+/* Textbox layout properties */
+div.textbox p {
+    padding: 0.2em;
+}
+div.textbox img {
+    width:35vw;
+    height:35vw;
+    object-fit: cover;
+}
+
+div.textbox button.general_button {
+    padding:0.5em;
+}
+
+@media only screen and (max-width: 700px) {
+    div.textbox h1 {
+        text-align: center;
+    }
+  }
+@media only screen and (max-width: 575px) {
+    div.textbox img {
+        width:70vw;
+        height:20vh;
+    }
+    div.textbox table{
+        font-size: 0.8em;
+    }
+  }
+/* Textbox after properties */
+div.textbox p:hover {
+    color: white;
+    background-color: rgb(19, 19, 19);
+}
+
+div.textbox img:hover {
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.287));
+}
+
+div.textbox button.general_button:hover {
+    color:black;
+    background-color: white;
+}
+
+div.textbox ul>li:hover {
+    color: white;
+    background-color: black;
+    font-size: 1.5em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border-radius: 2px;
+}
+
+/* Textbox transition properties */
+div.textbox p, div.textbox button.general_button, div.textbox ul>li {
+    transition: all 0.2s ease-in;
+}
+
+div.textbox img {
+    transition: filter 0.4s ease-in;
+}
+
+/* Display module */
+/* Display design properties */
+a.display {
+    text-decoration: none;
+}
+
+div.display div.display_image_container div.display_overlay h1 {
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0);
+}
+
+/* Display layout properties */
+div.display div.display_image_container {
+    position: relative;
+    display: flex;
+    width: 25vh;
+    height: 25vh;
+    margin-inline: 1em;
+}
+
+div.display div.display_image_container img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+div.display div.display_image_container div.display_overlay {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+@media only screen and (max-width: 530px) {
+    div.display div.display_image_container {
+        width: 20vh;
+        height: 20vh;
+        margin-inline: 0em;
+    }
+    div.display div.display_image_container div.display_overlay h1 {
+        font-size: 1.5em;
+        color: rgba(0, 0, 0, 0);
+    }
+  }
+/* Display after properties */
+div.display div.display_image_container:hover div.display_overlay {
+    background-color: rgba(0, 0, 0, 0.69);
+    backdrop-filter: blur(3px);
+}
+
+div.display div.display_image_container:hover div.display_overlay h1 {
+    color: white;
+}
+
+/* Display transition properties */
+div.display div.display_image_container div.display_overlay {
+    transition: all 0.3s ease-in;
+}
+
+div.display div.display_image_container div.display_overlay h1 {
+    transition: color 0.3s ease-in;
+}
+
+/* Parralax module */
+/* Parallax design properties */
+div.parallax h1{
+    font-size:2em;
+    font-weight:bold;
+    color:white;
+}
+div.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Parallax layout properties */
+div.parallax {
+    height:30vh;
+}
+div.parallax_overlay {
+    backdrop-filter: blur(10px) brightness(0.6);
+}
+
+/* Parralax after properties */
+/* None for now */
+
+
+
+/* Fixed go to top button */
+div#backtotop {
+    display:block;
+    position:fixed;
+    bottom: 5vh;
+    right: 5vw; 
+    background-color: rgb(255, 255, 255);
+    border: 3px solid white;
+    border-radius: 20%;
+}
+div#backtotop img{
+    width:5em;
+    height:auto;
+    filter:invert(0%);
+}
+@media only screen and (max-width: 700px) {
+    div#backtotop img{
+        width:4em;
+        height:auto;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    div#backtotop img{
+        width:3em;
+        height:auto;
+    }
+  }
+@media only screen and (min-width: 700px) {
+    div#backtotop:hover{
+    filter:invert(100%);
+    border: 3px solid rgb(0, 0, 0);
+}
+
+  }
+
+
+/* footer module */
+footer {
+    background-color: rgb(0, 0, 0);
+}
+footer div img.social{
+    width:4em;
+    height:auto;
+    padding-inline: 0.5em;
+    transition:filter 0.2s ease-in;
+    filter: invert(100%);
+}
+footer div p{
+    color:white;
+}
+footer div img.logo{
+    width:8em;
+    height:auto;
+    padding-inline: 0.5em;
+    filter: invert(100%);
+}
+footer div.bottom_nav a {
+    text-decoration:none;
+    font-size:1.2em;
+    color:white;
+    padding-inline: 1em;
+}
+
+footer div.bottom_nav a:hover {
+    text-decoration:underline;
+}
+
+footer div img.social:hover{
+    filter: invert(0%);
+}
+@media only screen and (max-width: 700px) {
+    footer div.bottom_nav a{
+        font-size:0/5em;
+    }
+  }
+
+/* facebook embed */
+div#facebook_embed { display:none;}
+div#facebook_embed_mobile { display:block;}
+@media only screen and (min-width: 550px) {
+    div#facebook_embed { display:block;}
+    div#facebook_embed_mobile { display:none;}
+}
