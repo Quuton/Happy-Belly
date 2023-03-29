@@ -1,2 +1,2 @@
 # Happy-Belly
- A site for a small business selling food
+ A static site for a small business selling food
